@@ -8,4 +8,4 @@ module FunctionModule
     let rec recursiveSum x =
         match x with
         | 0 | 100 -> x
-        | n -> calculateSum x 1 |> recursiveSum
+        | n -> calculateSum n 1 |> recursiveSum
