@@ -3,9 +3,9 @@ module FunctionModule
         x + y
 
     let memoizationSum z =
-        calculateSum z 10
+        calculateSum z 1
 
     let rec recursiveSum x =
         match x with
         | 0 | 100 -> x
-        | n -> calculateSum n 1 |> recursiveSum
+        | n -> memoizationSum n |> recursiveSum
